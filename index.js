@@ -1,1 +1,2 @@
-console.log('Hello JJ');
+let fistName = "Wachirawit";
+console.log(fistName);
