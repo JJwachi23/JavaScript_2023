@@ -1,12 +1,5 @@
-const now = 2037;
-const ageJonas = now - 1991;
-const ageSarah = now - 2018;
-
-// console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
-
-const firstName = 'Wachirawit';
-const lastName = 'Mool-Ang';
-console.log(firstName + ' ' + lastName);
+let fistName = "Wachirawit";
+console.log(fistName);
 
 // let x = 10 + 5; // 15
 x += 10; // x = x + 10 = 25
