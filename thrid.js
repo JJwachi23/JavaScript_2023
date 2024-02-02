@@ -18,6 +18,7 @@ if (birthYear <= 2000) {
 console.log(century);
 
 console.log("Hey");
+console.log("Hey");
 
 
 
