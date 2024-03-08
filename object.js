@@ -1,17 +1,3 @@
-// const Rabbit = (name, breed, color, weight) => {
-//     this.name = name;
-//     this.breed = breed;
-//     this.color = color;
-//     this.weight = weight
-// }
-
-// let rabbit1 = Rabbit('Mimi', 'Lion Head', 'White', 1.5);
-
-// let rabbit2 = new Rabbit('Momo', 'Netherland Dwarf', 'Brown', 1.2);
-
-// console.log(rabbit1);
-// console.log(rabbit2);
-
 class Person {
     constructor(firstName, lastName) {
         this.firstName = firstName;
@@ -31,3 +17,27 @@ console.log("Full Name:", p1.getFullName());
 
 console.log("Name:", p2.firstName);
 console.log("Full Name:", p2.getFullName());
+
+
+class Rectangle {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    getArea() {
+        return this.width * this.height;
+    }
+
+    draw() {
+        for (let i = 0; i < this.height; i++) {
+            console.log("#".repeat(this.width));
+        }
+    }
+};
+
+let rect1 = new Rectangle(3, 3);
+let rect2 = new Rectangle(3, 4);
+
+console.log("Area of rect1:", rect1.getArea());
+console.log("Area of rect2:", rect2.getArea());
