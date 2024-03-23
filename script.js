@@ -279,6 +279,8 @@ console.log(totals);
 //     ["Michael", "Peter", "Steven"]
 // ];
 
+
+/*
 //Object
 const jj = {
     firstName: "Wachirawit",
@@ -309,3 +311,34 @@ jj["Facebook"] = "Wachirawit Mool-ang"
 console.log(jj);
 
 console.log(`${jj.firstName} has ${jj.friends.length}friends, and his best friend is called ${jj.friends[0]}`);
+
+*/
+
+/*
+//Object method
+const jj = {
+    firstName: "Wachirawit",
+    lastName: "Mool-Ang",
+    birthYear: 2002,
+    job: "Programmer",
+    friends: ["Michael", "Peter", "Steven"],
+    hasDriversLicense: true,
+
+    // calcAge: function (birthYear) {
+    //     return 2024 - birthYear
+    // }
+
+    calcAge: function () {
+        // console.log(this);
+        this.age = 2024 - this.birthYear
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} year old ${jj.job}, and he has ${this.hasDriversLicense ? "YES" : "NO"} driver's license.`
+    }
+};
+
+// console.log(jj.calcAge());
+console.log(jj.getSummary());
+*/
