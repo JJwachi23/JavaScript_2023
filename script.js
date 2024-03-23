@@ -125,7 +125,7 @@ console.log(priceBook(199));
 
 //Arrow Function 2 (Destructuring)
 const pricePhone = (price) => `The phone is prices ${price}`;
-console.log(pricePhone(50000)); 
+console.log(pricePhone(50000));
 */
 
 
@@ -253,10 +253,59 @@ console.log(friends.includes("Peter"));
 
 if (friends.includes("Peter")) {
     console.log("You have a friend called Peter");
-} 
+}
 */
 
-const tip =
-    function calcTip() {
 
-    }
+/*
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(bills, tips);
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(totals);
+*/
+
+//Array
+// const jjArray = [
+//     "firstName",
+//     "LastName",
+//     22,
+//     "Student",
+//     ["Michael", "Peter", "Steven"]
+// ];
+
+//Object
+const jj = {
+    firstName: "Wachirawit",
+    lastName: "Mool-Ang",
+    age: 22,
+    job: "Programmer",
+    friends: ["Michael", "Peter", "Steven"]
+};
+
+console.log(jj);
+
+const lastNameKey = "Mool-Ang";
+console.log(jj.firstName + ' ' + lastNameKey);
+
+// const interestedIn = prompt("What do you want to know about JJ? Choose between firstName, lastName, age, job and friends.");
+// console.log(interestedIn);
+
+// console.log(jj[interestedIn])
+
+// if (jj[interestedIn]) {
+//     console.log(jj[interestedIn]);
+// } else {
+//     console.log("Wrong request! Choose between firstName, lastName, age, job and friends. ");
+// }
+
+jj.localtion = "Thailand";
+jj["Facebook"] = "Wachirawit Mool-ang"
+console.log(jj);
+
+console.log(`${jj.firstName} has ${jj.friends.length}friends, and his best friend is called ${jj.friends[0]}`);
