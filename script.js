@@ -342,3 +342,82 @@ const jj = {
 // console.log(jj.calcAge());
 console.log(jj.getSummary());
 */
+
+//Loop in JavaScript
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`Lifting weights repetition ${i} 🏋🏻`);
+// } 
+
+/*
+const jj = [
+    "Wachirawit",
+    "Mool-Ang",
+    2024 - 2002,
+    "Student",
+    ["Michael", "Peter", "Steven"],
+    true,
+];
+
+const types = [];
+
+for (let i = 0; i < jj.length; i++) {
+    // console.log(jj[i], typeof jj[i]);
+
+    // types[i] = typeof jj[i];
+    types.push(typeof jj[i]);
+}
+
+console.log(types);
+*/
+
+/*
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2024 - years[i]);
+}
+
+console.log(ages);
+*/
+
+/*
+//continue and break
+const jj = [
+    "Wachirawit",
+    "Mool-Ang",
+    2024 - 2002,
+    "Student",
+    ["Michael", "Peter", "Steven"],
+    true,
+];
+
+for (let i = 0; i < jj.length; i++) {
+    //ตรวจสอบตัวแปร jj ที่อ้างอิงด้วย i เป็นประเภทข้อมูล string หรือไม่ หากไม่ใช่โค้ดจะข้ามไปยังการทำงานถัดไปหรือคำสั่งหลังจาก continue
+    //--------หากเงื่อนไขในการใช้ continue เป็นจริงการทำงานจะจบแค่นั้นออกจากการวนซ้ำทันที-------
+    if (typeof jj[i] !== "string") continue;
+
+    console.log(jj[i], typeof jj[i]);
+};
+
+console.log('-------BREAK WITH NUMBER-------');
+for (let i = 0; i < jj.length; i++) {
+    if (typeof jj[i] === "number") break;
+
+    console.log(jj[i], typeof jj[i]);
+};
+*/
+
+const jj = [
+    "Wachirawit",
+    "Mool-Ang",
+    2024 - 2002,
+    "Student",
+    ["Michael", "Peter", "Steven"],
+    true,
+];
+
+for (let i = jj.length - 1; i >= 0; i--) {
+    console.log(i, jj[i]);
+}
+
